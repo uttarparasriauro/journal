@@ -24,6 +24,10 @@
     --quote-bg: #21153b;
     --commentary-bg: #14172b;
     
+    /* Overrides for violet text in dark mode for high readability */
+    --primary-color: #b794f4;
+    --secondary-color: #d8b4fe;
+    
     --theme: #0d0e15;
     --entry: #13141f;
     --primary: #e2e8f0;

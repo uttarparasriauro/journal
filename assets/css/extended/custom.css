@@ -1,0 +1,397 @@
+:root {
+    --primary-color: #7b2cbf;
+    --secondary-color: #5a189a;
+    --bg-color: #f6f8fa;
+    --card-bg: #ffffff;
+    --text-color: #2b2d42;
+    --quote-bg: #f3e8ff;
+    --commentary-bg: #eef2ff;
+    
+    /* PaperMod built-in variables overrides */
+    --theme: #f6f8fa;
+    --entry: #ffffff;
+    --primary: #2b2d42;
+    --secondary: #5a189a;
+    --tertiary: #e2e8f0;
+    --content: #2b2d42;
+    --border: #e2e8f0;
+}
+
+[data-theme=dark] {
+    --bg-color: #0d0e15;
+    --card-bg: #13141f;
+    --text-color: #e2e8f0;
+    --quote-bg: #21153b;
+    --commentary-bg: #14172b;
+    
+    --theme: #0d0e15;
+    --entry: #13141f;
+    --primary: #e2e8f0;
+    --secondary: #b794f4;
+    --tertiary: #2d3748;
+    --content: #e2e8f0;
+    --border: #2d3748;
+}
+
+/* Base style resets and typography */
+body {
+    font-family: 'Noto Serif Bengali', 'SolaimanLipi', 'Kalpurush', -apple-system, BlinkMacSystemFont, sans-serif !important;
+    background-color: var(--bg-color) !important;
+    color: var(--text-color);
+}
+
+/* Navigation Bar */
+.header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)) !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.header-nav {
+    padding: 0 1.5rem !important;
+    max-width: 960px !important;
+}
+
+.logo a {
+    color: #ffffff !important;
+    font-weight: 800 !important;
+    font-size: 1.5rem !important;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.15);
+    letter-spacing: 0.5px;
+}
+
+.menu a {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-weight: 600 !important;
+    transition: all 0.2s ease !important;
+    padding: 0.5rem 0.75rem !important;
+    border-radius: 8px;
+}
+
+.menu a:hover {
+    color: #ffffff !important;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.menu .active {
+    color: #ffffff !important;
+    background: rgba(255, 255, 255, 0.25);
+    text-decoration: none !important;
+}
+
+#theme-toggle svg {
+    fill: #ffffff !important;
+    color: #ffffff !important;
+}
+
+/* Home Info Card (Welcome Block) */
+.home-info {
+    background: var(--card-bg) !important;
+    padding: 2.25rem 2rem !important;
+    border-radius: 16px !important;
+    box-shadow: 0 10px 30px rgba(123, 44, 191, 0.08) !important;
+    border-left: 6px solid var(--primary-color) !important;
+    margin: 2rem 0 !important;
+    border-top: 1px solid var(--border) !important;
+    border-right: 1px solid var(--border) !important;
+    border-bottom: 1px solid var(--border) !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.home-info:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(123, 44, 191, 0.12) !important;
+}
+
+.home-info .entry-content {
+    font-size: 1.15rem !important;
+    line-height: 1.8 !important;
+    color: var(--text-color) !important;
+}
+
+/* Post Cards in Lists */
+.post-entry {
+    background: var(--card-bg) !important;
+    border: 1px solid var(--border) !important;
+    border-left: 5px solid var(--primary-color) !important;
+    border-radius: 12px !important;
+    padding: 1.75rem !important;
+    margin-bottom: 1.5rem !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03) !important;
+    transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s ease, border-color 0.3s ease !important;
+}
+
+.post-entry:hover {
+    transform: translateY(-4px) scale(1.005) !important;
+    box-shadow: 0 10px 25px rgba(123, 44, 191, 0.08) !important;
+    border-color: var(--primary-color) !important;
+}
+
+.entry-header h2 {
+    color: var(--primary-color) !important;
+    font-size: 1.35rem !important;
+    font-weight: 700 !important;
+}
+
+.entry-content {
+    color: var(--text-color) !important;
+    font-size: 0.98rem !important;
+    line-height: 1.6 !important;
+}
+
+/* Badges and Tags */
+.post-tags a {
+    background: var(--quote-bg) !important;
+    color: var(--primary-color) !important;
+    border: 1px solid rgba(123, 44, 191, 0.15) !important;
+    border-radius: 20px !important;
+    font-weight: 600 !important;
+    font-size: 0.8rem !important;
+    padding: 0.2rem 0.8rem !important;
+    line-height: 1.5 !important;
+}
+
+.post-tags a:hover {
+    background: var(--primary-color) !important;
+    color: #ffffff !important;
+}
+
+/* Post Content Cards (Inside chapters) */
+.paragraph-card {
+    background: var(--card-bg);
+    padding: 2.25rem 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2.5rem;
+    border-left: 5px solid var(--primary-color);
+}
+
+.paragraph-title {
+    color: var(--secondary-color);
+    font-size: 1.35rem;
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+    border-bottom: 2px solid var(--quote-bg);
+    padding-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.quote-box {
+    background-color: var(--quote-bg);
+    border-left: 4px solid var(--primary-color);
+    padding: 1.2rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 0 8px 8px 0;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 1.8;
+}
+
+.commentary-box {
+    background-color: var(--commentary-bg);
+    border: 1px solid rgba(123, 44, 191, 0.15);
+    padding: 1.2rem 1.5rem;
+    border-radius: 10px;
+    margin-top: 1.75rem;
+}
+
+.commentary-box h4 {
+    margin-top: 0;
+    color: var(--secondary-color);
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+/* Clean post page layout overrides for PaperMod */
+.post-content p {
+    line-height: 1.85;
+    margin-bottom: 1.25rem;
+}
+
+/* Footer layout styling */
+.footer {
+    border-top: 1px solid var(--border);
+    margin-top: 4rem !important;
+    padding: 2rem 0 !important;
+    color: #6c757d;
+}
+
+/* ==========================================================================
+   MOBILE-FIRST STYLING (Screen widths below 768px)
+   ========================================================================== */
+@media screen and (max-width: 767px) {
+    /* Base Font adjustments for readability and density */
+    body {
+        font-size: 14.5px !important;
+    }
+    
+    .post-content p {
+        line-height: 1.6 !important;
+        margin-bottom: 0.85rem !important;
+    }
+
+    /* Stack Navigation Bar to be centered and intuitive */
+    .header {
+        padding: 0.85rem 0 !important;
+    }
+
+    .header-nav {
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        row-gap: 0.85rem !important;
+        padding: 0 0.5rem !important;
+    }
+
+    .logo {
+        text-align: center !important;
+        width: 100% !important;
+        justify-content: center !important;
+    }
+
+    .logo a {
+        font-size: 1.2rem !important;
+        text-align: center !important;
+    }
+
+    .logo-switches {
+        position: absolute;
+        right: 0.75rem;
+        top: 0.4rem;
+    }
+
+    /* Pill-button style navigation menu */
+    .menu {
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        width: 100% !important;
+        column-gap: 0.35rem !important;
+        row-gap: 0.5rem !important;
+        margin: 0 !important;
+        padding: 0 0.25rem !important;
+    }
+
+    .menu a {
+        font-size: 0.8rem !important;
+        padding: 0.35rem 0.7rem !important;
+        background: rgba(255, 255, 255, 0.12) !important;
+        border: 1px solid rgba(255, 255, 255, 0.2) !important;
+        border-radius: 20px !important;
+        display: inline-block !important;
+        transition: all 0.2s ease !important;
+        text-decoration: none !important;
+    }
+
+    .menu a:hover {
+        background: rgba(255, 255, 255, 0.25) !important;
+    }
+
+    .menu .active {
+        background: #ffffff !important;
+        color: var(--primary-color) !important;
+        border-color: #ffffff !important;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1) !important;
+    }
+
+    /* Main Content Spacing */
+    .main {
+        padding: 0.6rem !important;
+    }
+
+    /* Headings adjustments */
+    .post-title {
+        font-size: 20px !important;
+        line-height: 1.3 !important;
+        text-align: center !important;
+    }
+
+    .post-meta {
+        font-size: 11px !important;
+        margin-top: 5px !important;
+        text-align: center !important;
+    }
+
+    .post-header {
+        margin: 12px auto 16px auto !important;
+    }
+
+    /* Responsive Paragraph Cards */
+    .paragraph-card {
+        padding: 0.85rem !important;
+        margin-bottom: 1.25rem !important;
+        border-left-width: 4px !important;
+        border-radius: 8px !important;
+    }
+
+    .paragraph-title {
+        font-size: 1.05rem !important;
+        margin-bottom: 0.75rem !important;
+        padding-bottom: 0.3rem !important;
+    }
+
+    /* Quote blocks inside cards */
+    .quote-box {
+        padding: 0.65rem 0.85rem !important;
+        margin: 0.85rem 0 !important;
+        font-size: 13.5px !important;
+        border-left-width: 3px !important;
+        line-height: 1.65 !important;
+    }
+
+    /* Commentary cards */
+    .commentary-box {
+        padding: 0.65rem 0.85rem !important;
+        margin-top: 1.15rem !important;
+        font-size: 13.5px !important;
+        border-radius: 8px !important;
+    }
+
+    .commentary-box h4 {
+        font-size: 13.5px !important;
+        margin-bottom: 0.4rem !important;
+    }
+
+    /* Welcome Block on Homepage */
+    .home-info {
+        padding: 1.25rem 1rem !important;
+        margin: 0.85rem 0 !important;
+        border-radius: 12px !important;
+        border-left-width: 4px !important;
+    }
+
+    .home-info .entry-content {
+        font-size: 0.92rem !important;
+        line-height: 1.65 !important;
+    }
+
+    /* Post Cards on Homepage */
+    .post-entry {
+        padding: 1.15rem 0.85rem !important;
+        margin-bottom: 0.85rem !important;
+        border-left-width: 4px !important;
+        border-radius: 10px !important;
+    }
+
+    .entry-header h2 {
+        font-size: 1.05rem !important;
+    }
+
+    .entry-content {
+        font-size: 0.85rem !important;
+        line-height: 1.45 !important;
+    }
+
+    /* Navigation Links at the bottom */
+    .paginav {
+        flex-direction: column !important;
+        row-gap: 0.4rem !important;
+    }
+
+    .paginav a {
+        width: 100% !important;
+        font-size: 12px !important;
+        padding: 0.5rem !important;
+        text-align: center !important;
+    }
+}

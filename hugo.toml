@@ -1,0 +1,29 @@
+baseURL = 'https://uttarparasriauro.github.io/journal/'
+locale = 'bn'
+title = 'শ্রীঅরবিন্দ পাঠ ও অনুধ্যান'
+theme = 'PaperMod'
+
+[params]
+    description = '“দিব্য জীবন” (The Life Divine) ও “যোগ সমন্বয়” (The Synthesis of Yoga) ধারাবাহিক পাঠ'
+    defaultTheme = 'auto'
+    showShareButtons = false
+    showCodeCopyButtons = false
+    mainSections = ["life-divine", "synthesis-of-yoga"]
+    homeInfoParams = { Title = "শ্রীঅরবিন্দ পাঠ ও অনুধ্যান", Content = "মানব চেতনার পূর্ণাঙ্গ রূপান্তর ও দিব্য জীবনের আহ্বানে—শ্রীঅরবিন্দের মূল দর্শনের সহজ ও অনুচ্ছেদভিত্তিক বাংলা ভাবার্থ এবং সংক্ষিপ্ত তাৎপর্য।" }
+
+# Mobile-first intuitive top navigation
+[[menu.main]]
+    name = "নীড়"
+    url = "/"
+    weight = 10
+[[menu.main]]
+    name = "দিব্য জীবন"
+    url = "/life-divine/"
+    weight = 20
+[[menu.main]]
+    name = "যোগ সমন্বয়"
+    url = "/synthesis-of-yoga/"
+    weight = 30
+
+[markup.goldmark.renderer]
+    unsafe = true # Allows inline HTML styling/layout inside Markdown files

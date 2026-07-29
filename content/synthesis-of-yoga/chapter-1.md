@@ -1,5 +1,5 @@
 ---
-title: "অধ্যায় ১: প্রাণ ও যোগ"
+title: "অধ্যায় ১: জীবন ও যোগ"
 date: 2026-07-28
 weight: 1
 summary: "যোগ সমন্বয় (Life and Yoga)"

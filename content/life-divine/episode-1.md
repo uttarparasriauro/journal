@@ -1,6 +1,7 @@
 ---
 title: "অধ্যায় ১: আমাদের মানবীয় অন্বেষণ"
 date: 2026-07-28
+weight: 1
 summary: "দিব্য জীবন (The Human Aspiration)"
 categories: ["The Life Divine"]
 draft: false

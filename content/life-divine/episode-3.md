@@ -1,6 +1,7 @@
 ---
 title: "অধ্যায় ৩: দুই অস্বীকৃতি - ২. তপস্বীর অস্বীকৃতি"
 date: 2026-07-29
+weight: 3
 summary: "দিব্য জীবন (The Two Negations: II. The Refusal of the Ascetic)"
 categories: ["The Life Divine"]
 draft: false

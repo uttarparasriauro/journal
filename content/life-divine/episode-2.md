@@ -1,6 +1,7 @@
 ---
 title: "অধ্যায় ২: দুই অস্বীকৃতি - ১. বস্তুবাদীর অস্বীকৃতি"
 date: 2026-07-29
+weight: 2
 summary: "দিব্য জীবন (The Two Negations: I. The Materialist Denial)"
 categories: ["The Life Divine"]
 draft: false

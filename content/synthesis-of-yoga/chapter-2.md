@@ -1,6 +1,7 @@
 ---
 title: "অধ্যায় ২: প্রকৃতির তিনটি ধাপ"
 date: 2026-07-29
+weight: 2
 summary: "যোগ সমন্বয় (The Three Steps of Nature)"
 categories: ["The Synthesis of Yoga"]
 draft: false

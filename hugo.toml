@@ -3,6 +3,8 @@ locale = 'bn'
 title = 'শ্রীঅরবিন্দ পাঠ ও অনুধ্যান'
 theme = 'PaperMod'
 
+paginate = 20
+
 [params]
     description = '“দিব্য জীবন” (The Life Divine) ও “যোগ সমন্বয়” (The Synthesis of Yoga) ধারাবাহিক পাঠ'
     defaultTheme = 'auto'

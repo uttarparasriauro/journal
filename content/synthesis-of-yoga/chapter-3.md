@@ -1,6 +1,6 @@
 ---
 title: "অধ্যায় ৩: ত্রিবিধ জীবন"
-date: 2026-07-30
+date: 2026-07-29
 summary: "যোগ সমন্বয় (The Threefold Life)"
 categories: ["The Synthesis of Yoga"]
 draft: false

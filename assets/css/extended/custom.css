@@ -58,8 +58,10 @@ body {
 }
 
 .header-nav {
-    padding: 0 1.5rem !important;
+    padding: 0.6rem 1.5rem !important;
     max-width: 960px !important;
+    align-items: center !important;
+    line-height: normal !important;
 }
 
 .logo a {
@@ -70,17 +72,25 @@ body {
     letter-spacing: 0.5px;
 }
 
+.menu {
+    align-items: center !important;
+    margin: 0 !important;
+    line-height: normal !important;
+}
+
 .menu a {
     color: #ffffff !important;
     font-weight: 600 !important;
     font-size: 0.88rem !important;
     transition: all 0.2s ease !important;
-    padding: 0.25rem 0.75rem !important;
-    line-height: 1.4 !important;
+    padding: 0.35rem 0.75rem !important;
+    line-height: 1.2 !important;
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.18) !important;
     border: 1px solid rgba(255, 255, 255, 0.3) !important;
     text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    display: inline-flex !important;
+    align-items: center !important;
 }
 
 .menu a:hover {

@@ -1,0 +1,77 @@
+backend:
+  name: git-gateway
+  branch: feature/organization-magazine-site # Change to 'main' when merging PR
+
+media_folder: "static/uploads"
+public_folder: "/uploads"
+
+publish_mode: editorial_workflow
+
+collections:
+  # -------------------------------------------------------------
+  # 1. Magazine Section (ঋতম ও অন্যান্য পত্রিকা)
+  # -------------------------------------------------------------
+  - name: "magazine"
+    label: "পত্রিকা সংকলন (Magazines)"
+    folder: "content/magazine"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "পত্রিকার নাম ও শিরোনাম", name: "title", widget: "string" }
+      - { label: "প্রকাশের তারিখ", name: "date", widget: "datetime" }
+      - { label: "সংক্ষিপ্ত বিবরণী (Description)", name: "description", widget: "text", required: false }
+      - { label: "সংক্ষিপ্ত সারসংক্ষেপ (Summary)", name: "summary", widget: "string", required: false }
+      - { label: "PDF নথি / পত্রিকা ফাইল", name: "pdf_file", widget: "file", required: false }
+      - { label: "মূল বিষয়বস্তু ও বিবরণ (Markdown Editor)", name: "body", widget: "markdown" }
+
+  # -------------------------------------------------------------
+  # 2. Reports Section (প্রতিবেদন ও সংবাদ)
+  # -------------------------------------------------------------
+  - name: "reports"
+    label: "বার্ষিক ও সাম্প্রতিক প্রতিবেদন (Reports)"
+    folder: "content/reports"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "প্রতিবেদনের শিরোনাম", name: "title", widget: "string" }
+      - { label: "তারিখ", name: "date", widget: "datetime" }
+      - { label: "সংক্ষিপ্ত বিবরণী", name: "description", widget: "text", required: false }
+      - { label: "প্রতিবেদনের বিস্তারিত বিবরণ (Markdown)", name: "body", widget: "markdown" }
+
+  # -------------------------------------------------------------
+  # 3. Gallery Section (ছবি ও ভিডিও গ্যালারি)
+  # -------------------------------------------------------------
+  - name: "gallery"
+    label: "ছবি ও ভিডিও গ্যালারি (Gallery)"
+    folder: "content/gallery"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "গ্যালারি শিরোনাম", name: "title", widget: "string" }
+      - { label: "তারিখ", name: "date", widget: "datetime" }
+      - { label: "ইউটিউব ভিডিও ID (YouTube Video ID)", name: "youtube_id", widget: "string", required: false, hint: "Example: dQw4w9WgXcQ" }
+      - { label: "গ্যালারি ছবি (Photo Upload)", name: "photo", widget: "image", required: false }
+      - { label: "অনুষ্ঠানের বিবরণ (Body)", name: "body", widget: "markdown" }
+
+  # -------------------------------------------------------------
+  # 4. Anudhyan Books (শ্রীঅরবিন্দ পাঠ ও অনুধ্যান)
+  # -------------------------------------------------------------
+  - name: "life_divine"
+    label: "অনুধ্যান: দিব্য জীবন (The Life Divine)"
+    folder: "content/anudhyan/life-divine"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "অধ্যায়ের শিরোনাম", name: "title", widget: "string" }
+      - { label: "তারিখ", name: "date", widget: "datetime" }
+      - { label: "অধ্যায়ের মূল বক্তব্য ও অনুধ্যান (Markdown)", name: "body", widget: "markdown" }
+
+  - name: "synthesis_of_yoga"
+    label: "অনুধ্যান: যোগ সমন্বয় (The Synthesis of Yoga)"
+    folder: "content/anudhyan/synthesis-of-yoga"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "অধ্যায়ের শিরোনাম", name: "title", widget: "string" }
+      - { label: "তারিখ", name: "date", widget: "datetime" }
+      - { label: "অধ্যায়ের মূল বক্তব্য ও অনুধ্যান (Markdown)", name: "body", widget: "markdown" }

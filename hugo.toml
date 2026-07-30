@@ -1,4 +1,4 @@
-baseURL = 'https://uttarparasriauro.github.io/journal/'
+baseURL = '/'
 locale = 'bn'
 title = 'উত্তরপাড়া শ্রীঅরবিন্দ পরিষদ'
 theme = 'PaperMod'

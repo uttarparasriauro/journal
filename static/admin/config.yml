@@ -1,5 +1,8 @@
+# Decap CMS configuration for GitHub Pages & Cloudflare Pages hosting
+
 backend:
-  name: git-gateway
+  name: github
+  repo: uttarparasriauro/journal
   branch: main
 
 media_folder: "static/uploads"

@@ -1,0 +1,70 @@
+/* Custom styling for Uttarpara Sri Aurobindo Parishad */
+
+:root {
+    --accent-gold: #d97706;
+    --accent-purple: #7c3aed;
+    --card-bg-light: #ffffff;
+    --card-border: rgba(217, 119, 6, 0.2);
+}
+
+.dark {
+    --card-bg-light: #1d1e20;
+    --card-border: rgba(217, 119, 6, 0.3);
+}
+
+/* Page Card Grid for Magazine & Gallery */
+.parishad-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.parishad-card {
+    background: var(--entry);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.25rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.parishad-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(217, 119, 6, 0.12);
+    border-color: var(--accent-gold);
+}
+
+.parishad-card-badge {
+    display: inline-block;
+    padding: 3px 10px;
+    background: rgba(217, 119, 6, 0.15);
+    color: var(--accent-gold);
+    font-size: 0.78rem;
+    font-weight: 600;
+    border-radius: 20px;
+    margin-bottom: 0.5rem;
+    width: fit-content;
+}
+
+/* Download / Action Buttons */
+.btn-action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background: var(--accent-gold);
+    color: #ffffff !important;
+    font-weight: 500;
+    border-radius: 6px;
+    text-decoration: none !important;
+    transition: opacity 0.2s;
+    margin-top: 0.75rem;
+}
+
+.btn-action:hover {
+    opacity: 0.9;
+}

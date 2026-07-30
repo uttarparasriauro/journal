@@ -1,9 +1,6 @@
 backend:
-  name: github
-  repo: uttarparasriauro/journal
+  name: git-gateway
   branch: main
-  base_url: https://decapbridge.com
-  auth_endpoint: auth
 
 media_folder: "static/uploads"
 public_folder: "/uploads"

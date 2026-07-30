@@ -2,7 +2,7 @@ backend:
   name: github
   repo: uttarparasriauro/journal
   branch: main
-  base_url: https://decap-cms-github-backend.vercel.app
+  base_url: https://decap-cms-oauth-provider.vercel.app
 
 media_folder: "static/uploads"
 public_folder: "/uploads"

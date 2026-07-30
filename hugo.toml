@@ -15,7 +15,7 @@ paginate = 20
 
 # Mobile-first intuitive top navigation
 [[menu.main]]
-    name = "নীড়"
+    name = "🏠"
     url = "/"
     weight = 10
 [[menu.main]]

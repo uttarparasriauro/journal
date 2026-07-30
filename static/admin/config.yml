@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: uttarparasriauro/journal
-  branch: feature/organization-magazine-site # Change to 'main' when merging PR
+  branch: main
 
 media_folder: "static/uploads"
 public_folder: "/uploads"

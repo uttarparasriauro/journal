@@ -4,6 +4,8 @@ backend:
   name: github
   repo: uttarparasriauro/journal
   branch: main
+  base_url: https://uttarparasriauro.github.io # Will be replaced by your Cloudflare custom domain
+  auth_endpoint: api/auth
 
 media_folder: "static/uploads"
 public_folder: "/uploads"

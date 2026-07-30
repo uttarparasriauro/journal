@@ -8,9 +8,9 @@ layout: "list"
 
 ---
 
-### 🎥 ভিডিও সংকলন (Video Highlights)
+### 🎥 Film on Sri Aurobindo’s Uiiarpara Speech 30 May 1909
 
-{{< youtube id="HASWtM7sl2c" title="উত্তরপাড়া শ্রীঅরবিন্দ পরিষদ — বিশেষ স্মারক আলোচনা সভা" >}}
+{{< youtube id="HASWtM7sl2c" title="Film on Sri Aurobindo’s Uiiarpara Speech 30 May 1909" >}}
 
 ---
 

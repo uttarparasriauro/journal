@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: uttarparasriauro/journal
   branch: feature/organization-magazine-site # Change to 'main' when merging PR
 
 media_folder: "static/uploads"

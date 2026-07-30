@@ -1,0 +1,27 @@
+{{/* Hugo Shortcode for Embedding PDF Files with Fullscreen and Direct Download Controls */}}
+{{ $url := .Get "src" | default (.Get 0) }}
+{{ $title := .Get "title" | default "পত্রিকা / নথি (PDF Viewer)" }}
+{{ $height := .Get "height" | default "700px" }}
+
+<div class="pdf-viewer-container" style="margin: 1.5rem 0; border: 1px solid var(--border); border-radius: 12px; overflow: hidden; background: var(--entry); box-shadow: 0 4px 16px rgba(0,0,0,0.06);">
+    <div class="pdf-viewer-header" style="padding: 12px 18px; background: rgba(var(--secondary-bg-rgb, 240, 240, 240), 0.5); border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+        <span style="font-weight: 600; font-size: 1.05rem; display: flex; align-items: center; gap: 8px;">
+            📄 {{ $title }}
+        </span>
+        <div style="display: flex; gap: 10px;">
+            <a href="{{ $url }}" target="_blank" rel="noopener noreferrer" style="padding: 6px 14px; background: #8b5cf6; color: #ffffff; text-decoration: none; border-radius: 6px; font-size: 0.88rem; font-weight: 500; display: inline-flex; align-items: center; gap: 6px; transition: opacity 0.2s;">
+                ↗️ নতুন ট্যাবে খুলুন
+            </a>
+            <a href="{{ $url }}" download style="padding: 6px 14px; background: #10b981; color: #ffffff; text-decoration: none; border-radius: 6px; font-size: 0.88rem; font-weight: 500; display: inline-flex; align-items: center; gap: 6px; transition: opacity 0.2s;">
+                ⬇️ ডাউনলোড করুন (PDF)
+            </a>
+        </div>
+    </div>
+    <div class="pdf-frame-wrapper" style="width: 100%; height: {{ $height }}; position: relative; background: #525659;">
+        <iframe src="{{ $url }}" width="100%" height="100%" style="border: none; width: 100%; height: 100%;" title="{{ $title }}">
+            <p style="padding: 20px; color: #ffffff; text-align: center;">
+                আপনার ব্রাউজার সরাসরি PDF প্রদর্শন করতে পারছে না। <a href="{{ $url }}" style="color: #60a5fa; text-decoration: underline;">এখানে ক্লিক করে PDF ফাইলটি নামিয়ে নিন</a>।
+            </p>
+        </iframe>
+    </div>
+</div>

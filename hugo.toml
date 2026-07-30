@@ -1,6 +1,6 @@
 baseURL = 'https://uttarparasriauro.github.io/journal/'
 locale = 'bn'
-title = 'শ্রীঅরবিন্দ পাঠ ও অনুধ্যান'
+title = 'উত্তরপাড়া শ্রীঅরবিন্দ পরিষদ'
 theme = 'PaperMod'
 
 paginate = 20
@@ -10,22 +10,30 @@ paginate = 20
     defaultTheme = 'auto'
     showShareButtons = false
     showCodeCopyButtons = false
-    mainSections = ["life-divine", "synthesis-of-yoga"]
-    homeInfoParams = { Title = "শ্রীঅরবিন্দ পাঠ ও অনুধ্যান", Content = "মানব চেতনার পূর্ণাঙ্গ রূপান্তর ও দিব্য জীবনের আহ্বানে—শ্রীঅরবিন্দের মূল দর্শনের সহজ ও অনুচ্ছেদভিত্তিক বাংলা ভাবার্থ এবং সংক্ষিপ্ত তাৎপর্য।" }
+    mainSections = ["life-divine", "synthesis-of-yoga", "magazine", "reports", "gallery"]
+    homeInfoParams = { Title = "উত্তরপাড়া শ্রীঅরবিন্দ পরিষদ", Content = "শ্রীঅরবিন্দ পাঠ, অনুধ্যান, প্রকাশিত পত্রিকা, বার্ষিক প্রতিবেদন এবং পরিষদ সংবাদ" }
 
 # Mobile-first intuitive top navigation
 [[menu.main]]
-    name = "🏠"
+    name = "🏠 প্রচ্ছদ"
     url = "/"
     weight = 10
 [[menu.main]]
-    name = "দিব্য জীবন"
-    url = "/life-divine/"
+    name = "শ্রীঅরবিন্দ পাঠ ও অনুধ্যান"
+    url = "/anudhyan/"
     weight = 20
 [[menu.main]]
-    name = "যোগ সমন্বয়"
-    url = "/synthesis-of-yoga/"
+    name = "পত্রিকা"
+    url = "/magazine/"
     weight = 30
+[[menu.main]]
+    name = "প্রতিবেদন"
+    url = "/reports/"
+    weight = 40
+[[menu.main]]
+    name = "গ্যালারি"
+    url = "/gallery/"
+    weight = 50
 
 [markup.goldmark.renderer]
     unsafe = true # Allows inline HTML styling/layout inside Markdown files

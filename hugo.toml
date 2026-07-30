@@ -37,3 +37,4 @@ paginate = 20
 
 [markup.goldmark.renderer]
     unsafe = true # Allows inline HTML styling/layout inside Markdown files
+# Trigger deployment to load environment variables into Pages Functions

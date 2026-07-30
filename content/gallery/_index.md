@@ -10,7 +10,7 @@ layout: "list"
 
 ### 🎥 ভিডিও সংকলন (Video Highlights)
 
-{{< youtube id="dQw4w9WgXcQ" title="উত্তরপাড়া শ্রীঅরবিন্দ পরিষদ — বিশেষ স্মারক আলোচনা সভা" >}}
+{{< youtube id="HASWtM7sl2c" title="উত্তরপাড়া শ্রীঅরবিন্দ পরিষদ — বিশেষ স্মারক আলোচনা সভা" >}}
 
 ---
 

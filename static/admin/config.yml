@@ -4,6 +4,7 @@ backend:
   name: github
   repo: uttarparasriauro/journal
   branch: main
+  base_url: https://journal-bin.pages.dev
   auth_endpoint: api/auth
 
 media_folder: "static/uploads"
